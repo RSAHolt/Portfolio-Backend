@@ -5,8 +5,8 @@ import { getVisitorsCon,getVisitorIpCon,getVisitorTimestampCon,insertVisitorCon 
 const router = express.Router()
 
 router.get('/',getVisitorsCon)
-router.get('/:ip',getVisitorIpCon)
-router.get('/:timestamp',getVisitorTimestampCon)
+router.get('/ip/:ip',getVisitorIpCon)
+router.get('/timestamp/:timestamp',getVisitorTimestampCon)
 router.post('/',insertVisitorCon)
 
 export default router
